@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Edit-mode tests for the rules engine. Sources live in the Unity package (Tests/Editor) so the
+    same NUnit tests run here with `dotnet test` and in the Unity Test Runner.
+    Stick to NUnit 3 `Assert.That` style: it works on both NUnit 3.14 and Unity's bundled NUnit.
+  -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <AssemblyName>IntergalacticFootball.Rules.Tests</AssemblyName>
+    <RootNamespace>IntergalacticFootball.Rules.Tests</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="../../packages/com.intergalacticfootball.rules/Tests/Editor/**/*.cs" LinkBase="Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="NUnit" Version="3.14.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../Rules/IntergalacticFootball.Rules.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    The rules engine. Sources live in the Unity package (packages/com.intergalacticfootball.rules/Runtime)
+    so Unity and plain .NET compile exactly the same files.
+    netstandard2.1 + C# 9 matches what Unity 6 supports, and the code must never reference UnityEngine:
+    the same assembly has to run inside Cloud Code on the open .NET runtime.
+  -->
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <AssemblyName>IntergalacticFootball.Rules</AssemblyName>
+    <RootNamespace>IntergalacticFootball.Rules</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="../../packages/com.intergalacticfootball.rules/Runtime/**/*.cs" LinkBase="Runtime" />
+  </ItemGroup>
+
+</Project>

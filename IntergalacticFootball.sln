@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dotnet", "dotnet", "{6E436114-6B28-49E8-A61D-4E065E2D3429}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntergalacticFootball.Rules", "dotnet\Rules\IntergalacticFootball.Rules.csproj", "{5550BFA6-89A7-4305-BE3D-4528C4036209}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntergalacticFootball.Rules.Tests", "dotnet\Rules.Tests\IntergalacticFootball.Rules.Tests.csproj", "{F9DE394D-4DB5-4D9F-BB57-5C52023AD414}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntergalacticFootball.Cli", "dotnet\Cli\IntergalacticFootball.Cli.csproj", "{7722E86A-062C-4647-9702-AAEC43D57C70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5550BFA6-89A7-4305-BE3D-4528C4036209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5550BFA6-89A7-4305-BE3D-4528C4036209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5550BFA6-89A7-4305-BE3D-4528C4036209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5550BFA6-89A7-4305-BE3D-4528C4036209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9DE394D-4DB5-4D9F-BB57-5C52023AD414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9DE394D-4DB5-4D9F-BB57-5C52023AD414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9DE394D-4DB5-4D9F-BB57-5C52023AD414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9DE394D-4DB5-4D9F-BB57-5C52023AD414}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7722E86A-062C-4647-9702-AAEC43D57C70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7722E86A-062C-4647-9702-AAEC43D57C70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7722E86A-062C-4647-9702-AAEC43D57C70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7722E86A-062C-4647-9702-AAEC43D57C70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5550BFA6-89A7-4305-BE3D-4528C4036209} = {6E436114-6B28-49E8-A61D-4E065E2D3429}
+		{F9DE394D-4DB5-4D9F-BB57-5C52023AD414} = {6E436114-6B28-49E8-A61D-4E065E2D3429}
+		{7722E86A-062C-4647-9702-AAEC43D57C70} = {6E436114-6B28-49E8-A61D-4E065E2D3429}
+	EndGlobalSection
+EndGlobal

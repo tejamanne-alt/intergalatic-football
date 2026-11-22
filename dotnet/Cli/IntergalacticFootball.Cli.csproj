@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Developer harness: play a match in the terminal (vs AI or pass-and-play) and run AI-vs-AI pacing sims. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>ifoot</AssemblyName>
+    <RootNamespace>IntergalacticFootball.Cli</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../Rules/IntergalacticFootball.Rules.csproj" />
+  </ItemGroup>
+
+</Project>
