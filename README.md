@@ -2,6 +2,10 @@
 
 7v7 football as a turn-based tactics game on a 15×9 grid. Each team is a species with its own powers, and each team gets 3 actions per turn. See the [core concept](docs/concept.md) for the pitch and [rules v0.1](docs/rules.md) for exactly what the engine does.
 
+![Pass preview: odds shown before you commit](previews/3-pass.webp)
+
+Screen mockups in [`previews/`](previews/): kick-off, choosing a move, pass odds, a Blink, a goal. The look is a proposal. The positions, odds and rolls come from real AI-vs-AI matches in the engine.
+
 This repository holds the first build's **rules engine**, a plain C# assembly with no UnityEngine references. It contains:
 
 - the match state
